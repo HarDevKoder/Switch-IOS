@@ -1,5 +1,4 @@
-
- // Obtener el checkbox
+// Obtener el checkbox
 const checkbox = document.getElementById("switch");
 
 // Asignar evento "change" al checkbox
