@@ -6,7 +6,7 @@
   border-radius: 100px;
   cursor: pointer;
   position: relative;
-  transition: .2s;
+  transition: 0.5s;
 }
  
 .lbl::after{
@@ -19,7 +19,7 @@
   position: absolute;
   top: 4px;
   left: 4px;
-  transition: .2s;
+  transition: 0.5s;
 }
  
 #switch:checked + .lbl::after{

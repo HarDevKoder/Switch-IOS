@@ -1,4 +1,5 @@
-// Obtener el checkbox
+
+ // Obtener el checkbox
 const checkbox = document.getElementById("switch");
 
 // Asignar evento "change" al checkbox
@@ -11,4 +12,10 @@ checkbox.addEventListener("change", function() {
 const checkboxState = localStorage.getItem("checkboxState");
 
 // Establecer el estado del checkbox en función del valor guardado
-checkbox.checked = JSON.parse(checkboxState);
+if (checkboxState === "true") {
+  checkbox.checked = true;
+  document.querySelector('.label').style.transition = 0;
+  document.querySelector('.lbl::after').style.transition = 0;
+} else {
+  checkbox.checked = false;
+}
